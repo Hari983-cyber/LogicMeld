@@ -49,7 +49,6 @@ if (stats.length > 0) {
     function animateStats() {
         // Find a parent section to trigger the animation
         const section = stats[0].closest('.section');
-        // Safety check if section exists
         if (!section) return;
 
         const triggerPoint = section.getBoundingClientRect().top;
@@ -147,6 +146,26 @@ if (contactForm) {
                 btn.style.color = "var(--primary)";
                 btn.style.opacity = "1";
             }, 4000);
+        });
+    });
+}
+
+// --- 6. MOBILE MENU TOGGLE ---
+const hamburger = document.getElementById("hamburger-btn");
+const navMenu = document.getElementById("nav-menu");
+
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        // Toggle the 'active' class on both the button and the menu
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll(".nav-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
         });
     });
 }
