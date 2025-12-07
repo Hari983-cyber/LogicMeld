@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Meld | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Local overrides for the home page specific layouts */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature-box {
+            padding: 30px;
+            border: 1px solid #222;
+            background: rgba(255,255,255,0.02);
+            transition: 0.3s;
+        }
+        .feature-box:hover {
+            border-color: var(--primary);
+            background: rgba(204, 255, 0, 0.05);
+        }
+        .cta-section {
+            background: var(--primary);
+            color: var(--bg);
+            text-align: center;
+        }
+        .cta-section h2, .cta-section p { color: var(--bg); }
+        .cta-btn {
+            background: var(--bg);
+            color: var(--primary);
+            border: none;
+        }
+        .cta-btn:hover {
+            background: #000;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="nav-wrapper">
+        <a href="index.html">
+            <img src="LogicMeld.png" alt="Logic Meld Logo" class="logo-img">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="cta-btn-header"><span>GET IN TOUCH</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <p style="font-family: var(--font-mono); color: var(--primary); margin-bottom: 10px;">
+                <span id="typing-text"></span><span class="cursor">_</span>
+            </p>
+            <h1>WE ENGINEER<br>THE <span class="highlight" style="animation: glitch 2s infinite;">DIGITAL</span><br>FUTURE.</h1>
+            <p class="tagline">Logic Meld is the glitch in the matrix. We don't just write code; we architect scalable, bulletproof digital ecosystems for brands that refuse to be boring.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="contact.html" class="btn">Initiate Protocol</a>
+                <a href="work.html" class="btn" style="border-color: #fff; color: #fff;">View Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee">
+        <div class="track">
+            /// REACT /// NODE.JS /// PYTHON /// AWS /// DOCKER /// KUBERNETES /// SOLIDITY /// NEXT.JS /// TYPESCRIPT /// GRAPHQL /// 
+            /// REACT /// NODE.JS /// PYTHON /// AWS /// DOCKER /// KUBERNETES /// SOLIDITY /// NEXT.JS /// TYPESCRIPT /// GRAPHQL /// 
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="reveal">
+                    <h4 class="accent">/// SYSTEM_ERROR_DETECTED</h4>
+                    <h2 style="margin-top: 10px;">THE WEB IS<br>BROKEN.</h2>
+                    <p>Most software agencies differ in name only. They offer bloated code, missed deadlines, and "corporate synergy" meetings that drain your soul.</p>
+                    <p>Your business deserves better. You need a digital special forces unit. We enter, we execute, we deploy.</p>
+                    <a href="about.html" style="color: var(--text); font-family: var(--font-mono); text-decoration: underline;">READ OUR MANIFESTO ></a>
+                </div>
+                <div class="reveal">
+                     <div style="border: 1px solid #333; padding: 40px; position: relative;">
+                        <div style="position: absolute; top: -10px; left: -10px; width: 50px; height: 50px; border-top: 2px solid var(--primary); border-left: 2px solid var(--primary);"></div>
+                        <div style="position: absolute; bottom: -10px; right: -10px; width: 50px; height: 50px; border-bottom: 2px solid var(--primary); border-right: 2px solid var(--primary);"></div>
+                        <h3 class="highlight">0% BLOAT.</h3>
+                        <h3 class="highlight">100% LETHALITY.</h3>
+                        <p style="margin-top: 20px;">We operate in the shadows to make you shine in the light. Our code is optimized for speed, security, and scalability.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #080808;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+                <h2 class="reveal">PROTOCOL VISION_</h2>
+                <p class="reveal" style="text-align: right; max-width: 400px;">See how we transform antiquated systems into lethal digital weapons.</p>
+            </div>
+            
+            <div class="reveal" style="border: 1px solid var(--primary); box-shadow: 0 0 20px rgba(204, 255, 0, 0.1); background: #000;">
+               <video width="100%" controls style="display: block; max-height: 600px; object-fit: cover;">
+                   <source src="promo.mp4" type="video/mp4">
+                   Your browser does not support the video tag.
+               </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="reveal">TACTICAL SOLUTIONS_</h2>
+            <div class="service-list reveal" style="margin-top: 40px;">
+                <div class="service-card">
+                    <div class="service-icon">01.</div>
+                    <h3>WEB DEV</h3>
+                    <p>High-performance frontends that convert visitors into users.</p>
+                    <a href="services.html" style="color: var(--primary); font-family: var(--font-mono); font-size: 0.8rem;">EXPLORE ></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">02.</div>
+                    <h3>MOBILE APPS</h3>
+                    <p>iOS and Android ecosystems built on React Native & Flutter.</p>
+                    <a href="services.html" style="color: var(--primary); font-family: var(--font-mono); font-size: 0.8rem;">EXPLORE ></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">03.</div>
+                    <h3>AI SYSTEMS</h3>
+                    <p>Automate your workflow with custom LLMs and Neural Networks.</p>
+                    <a href="services.html" style="color: var(--primary); font-family: var(--font-mono); font-size: 0.8rem;">EXPLORE ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="border-bottom: none;">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 40px;">
+                <h2>OPERATIONAL METRICS</h2>
+            </div>
+            <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div class="stat-box">
+                    <span class="stat-number" data-target="85">0</span>
+                    <span class="stat-label">Projects Shipped</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="100">0</span>%
+                    <span class="stat-label">Uptime</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Awards Won</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="50">0</span>M+
+                    <span class="stat-label">Lines of Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="reveal">THE LOGIC DIFFERENCE_</h2>
+            <div class="feature-grid reveal">
+                <div class="feature-box">
+                    <h3 class="cyan">VELOCITY</h3>
+                    <p>We work in 2-week sprints. You see progress every 14 days, not every 6 months.</p>
+                </div>
+                <div class="feature-box">
+                    <h3 class="cyan">TRANSPARENCY</h3>
+                    <p>Full access to our Jira and GitHub. Watch the sausage get made (it's clean).</p>
+                </div>
+                <div class="feature-box">
+                    <h3 class="cyan">SECURITY</h3>
+                    <p>Bank-grade encryption standard on every project, no matter how small.</p>
+                </div>
+                <div class="feature-box">
+                    <h3 class="cyan">GLOBAL</h3>
+                    <p>A distributed team across 3 continents ensuring 24/7 development cycles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+                <h2 class="reveal">RECENT INTERCEPTIONS_</h2>
+                <a href="work.html" class="btn reveal" style="padding: 10px 20px; font-size: 0.8rem;">ALL PROJECTS</a>
+            </div>
+            <div class="portfolio-grid reveal">
+                <div class="project">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=1969&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="tags"><span class="tag">Fintech</span></div>
+                        <h3>CoinVault App</h3>
+                        <p>A decentralized wallet for the next billion users.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=2532&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="tags"><span class="tag">Web3</span></div>
+                        <h3>Pixel Market</h3>
+                        <p>NFT Marketplace built on Solana.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop');"></div>
+                    <div class="project-info">
+                        <div class="tags"><span class="tag">AI</span></div>
+                        <h3>AutoReply.ai</h3>
+                        <p>Customer support automation tool.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #080808;">
+        <div class="container">
+            <h2 class="reveal">QUICK DEBUG_</h2>
+            <div class="faq-container reveal" style="max-width: 800px; margin-top: 40px;">
+                <div class="faq-item">
+                    <button class="faq-question">How fast can you start?</button>
+                    <div class="faq-answer">
+                        <p>Immediately. Once the contract is signed, we spin up the repository within 2 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer post-launch support?</button>
+                    <div class="faq-answer">
+                        <p>Yes. We offer retainer packages to keep your software updated and secure.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can you fix my existing code?</button>
+                    <div class="faq-answer">
+                        <p>We can audit it. If it's salvageable, we refactor it. If it's garbage, we rewrite it.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 30px;" class="reveal">
+                <a href="faq.html" style="color: var(--primary); font-family: var(--font-mono);">VIEW FULL KNOWLEDGE BASE ></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container reveal">
+            <h2>READY TO DISRUPT?</h2>
+            <p style="max-width: 600px; margin: 20px auto; opacity: 0.9; color: #000;">Stop using yesterday's technology. Upgrade your infrastructure today and leave your competition in the dust.</p>
+            <a href="contact.html" class="btn cta-btn">START YOUR PROJECT</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="./LogicMeld.png" alt="Logic Meld" style="height: 30px; margin-bottom: 20px;">
+                    <p>Building the backbone of the internet, one commit at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SITEMAP</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SOCIALS</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter / X</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Logic Meld Inc. All systems operational.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
